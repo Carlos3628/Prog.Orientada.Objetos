@@ -1,0 +1,18 @@
+Lista de Polimorfismo
+
+1) A classe oficina possui duas funcoes, a primeira cria um numero
+aleatorio através da classe Random da biblioteca java, entao testa
+esse número, se ele for impar ele cria um veiculo da subclasse bike
+se ele for par, criará um automovel, entao retorna esse veiculo. Sua
+segunda classe revisa e verifica o tipo de veiculo criado.
+
+Ja a clsse UsaOficina (Exer1) cria uma oficina, e um veiculo sem dar new
+entao utiliza um for para efetuar a funcao "oficina.proximo()" que cria
+o numero aleatorio e retorna um veiculo do tipo bike ou automovel
+chamando a classe vezes e revisando os 4 tipos de veiculos retornados.
+
+3) Foi utilizado polimorfismo apenas para calcular a area do quadrado e circulo
+uma vez que os calculos sao diferentes um do outro. (@Override)
+
+4) Utilizei polimorfismo apenas para calcular o desconto do cliente especial
+pois era um desconto maior. (@Override)
