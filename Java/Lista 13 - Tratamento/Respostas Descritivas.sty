@@ -1,0 +1,34 @@
+Respostas Descritivas
+
+1) Throwable
+
+2) Instrução try
+
+3) Um catch efetua o que programador quer que ocorra quando o erro acontece
+   Os demais catch, caso haja, serão ignorados
+
+4) Ela é captada pela JMV, que trata o erro encerrando a execusão
+
+5) Retornar a um estado seguro e permitir que o usuário efetue outros comandos,
+ou permitir que o mesmo salve todo seu trabalho e encerrar o programa da melhor
+forma possível
+
+6) try - é onde vai o código cujo o qual vc quer tratar caso haja erros
+   catch - é onde vc define o que o programa deve fazer caso aconteça determinado erro
+   finally - ela sempre é executada ocorrendo ou não erros, normalmente usada para fechar o arquivo
+
+7) Não foi colocado try antes de definir o catch, não existe catch sem try
+
+8)public class Exercicio1 {
+    public static void main(String[] args) {
+        try{
+            int[] vetor = new int[] { 2, 4, 6, 8, 10, 12 };
+            for (int i = 0; i < 12; i++)
+            System.out.println(vetor[i]);
+        }
+        catch( ArrayIndexOutOfBoundsException ArrayIndexOutOfBoundsException){
+            System.out.println("Fim do Vetor.");
+        }
+        finally{}
+    }
+}
