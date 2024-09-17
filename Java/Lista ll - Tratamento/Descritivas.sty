@@ -1,0 +1,50 @@
+Respostas Descritivas:
+
+1) Sim.
+
+2) Sim, a cláusula catch de uma superclasse também será
+aplicada a qualquer uma de suas subclasses.
+
+3) Será propagada para o try externo, e caso ele também não pegue,
+então a Java Machine pegará.
+
+4) Sim, uma exceção capturada por uma instrução catch pode
+ser relançada para ser capturada por um catch externo.
+
+5) Permite que uma exceção seja lançada manualmente.
+
+6) Um objeto de exceção deriva de Throwable.
+
+7) Sim, ao relançar uma exceção, use uma instrução throw dentro de
+uma cláusula catch, lançando a exceção passada como
+argumento.
+
+8) Linha 5 e 11, pois são os comandos a serem seguidos caso haja um erro,
+devinidas pela clausula catch.
+
+9) Linha 6
+
+10) Verdadeiro, a clausula finally finazliza o bloco try/catch, e vai rodas suas
+instruções mesmo que não haja erros.
+
+11) Exeption e Error
+
+12) Não, por que Error são erros fatais que matam o código e terminam com a compilação
+
+13)public class ParImpar {
+    public static void main(String[] args) {
+        int num;
+        try {
+            num = Integer.parseInt(args[0]);
+            if ((num % 2) == 0) {
+                System.out.println("Número par");
+            } else {
+                System.out.println("Número impar");
+            }
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Erro: não foi passado nenhum argumento.");
+        } catch (NumberFormatException e) {
+            System.out.println("Erro: o argumento não é um número válido.");
+        }
+    }
+}
