@@ -1,5 +1,5 @@
 public class Professor {
-    public String nome;
+    private String nome;
 
     public Professor(String nome){
         this.nome = nome;
