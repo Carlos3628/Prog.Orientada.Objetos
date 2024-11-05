@@ -25,25 +25,19 @@ public class Universidade {
 
     public String buscarAluno(String nome) throws AlunoNaoEncontradoException {
         for(Aluno v: alunos){
-            if(v.nome==nome){
+            if(v.getNome()==nome){
                 return nome + " encontrado";
             }
-            else{
-                throw new AlunoNaoEncontradoException();
-            }
         }
-        return null;
+        throw new AlunoNaoEncontradoException();
     }
 
     public String buscarProfessor(String nome) throws AlunoNaoEncontradoException {
         for(Professor f: professores){
-            if(f.nome==nome){
+            if(f.getNome()==nome){
                 return nome + " encontrado";
             }
-            else{
-                throw new AlunoNaoEncontradoException();
-            }
         }
-        return null;
+        throw new AlunoNaoEncontradoException();
     }
 }
